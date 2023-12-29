@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/43d8fee5c3.js" crossorigin="anonymous"></script>
+</head>
+<body">
+    <div class="back pt-5 pb-[-10px]">
+        <a class="border-2 border-black py-2 px-3 rounded-md text-orange-500 hover:text-orange-200" href="/code+/05_project-top5/index.html">Back to main meniu</a>
+    </div>
+
+    <h1 class="text-center mt-10 text-4xl pb-[70px]">CALCULATOR</h1>
+
+
+
+    
+
+    <div class="cal flex flex-col items-center">
+
+
+        <div class="imp">
+            <input type="text" name="rezultat" id="rezultat" readonly class="p-4 w-60 bg-yellow-200">
+        </div>
+            
+  
+                <div class="cal2 flex justify-center">
+
+                    <div class="box flex flex-col">
+                        <button class="-mt-1 p-3" onclick="updateCal('-')">-</button>
+                        <button class="-mt-1 p-3" onclick="updateCal('+')">+</button>
+                        <button class="-mt-1 p-3" onclick="updateCal('/')">/</button>
+                        <button class="-mt-1 p-3" onclick="updateCal('*')">*</button>
+                    </div>
+
+                <div class="box w-[152px] rotx">
+                    <button class="ins gg" onclick="updateCal('7')">7</button>
+                    <button class="ins" onclick="updateCal('8')">8</button>
+                    <button class="ins" onclick="updateCal('9')">9</button>
+
+                    <button class="ins gg" onclick="updateCal('4')">4</button>
+                    <button class="ins" onclick="updateCal('5')">5</button>
+                    <button class="ins" onclick="updateCal('6')">6</button>
+                    
+                    <button class="ins gg" onclick="updateCal('1')">1</button>
+                    <button class="ins" onclick="updateCal('2')">2</button>
+                    <button class="ins" onclick="updateCal('3')">3</button>
+
+                    <button class="ins gg" onclick="updateCal('0')">0</button>
+                    <button class="ins" onclick="updateCal('.')">.</button>
+                    <button class="ins" onclick="calculateResult()">=</button>
+                </div>
+
+
+
+                <div class="box">
+                    <button class="p-3" onclick="clearInput()">C</button>
+                </div>
+            </div>
+
+
+            </div>
+        
+
+    
+  
+
+      <script src="index.js"></script>
+</body>
+</html>
