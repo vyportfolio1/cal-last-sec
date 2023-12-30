@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P'
+}
+
+.ins{
+    background-color: rgba(251, 245, 229, 1);
+    border-color: rgba(63, 71, 74, 1);
+}
+
+.rotx{
+    background-color: rgba(124, 124, 132, 1);
+    border-color: rgba(253, 255, 254, 1);
+}
+
+.ins1{
+    background-color: rgba(129, 179, 180, 1);
+    border-color: rgba(63, 71, 74, 1);
+}
+
+.bott{
+    background-color: rgba(104, 103, 108, 1);
+}
+
+.bg-r{
+    background-color: rgba(120, 123, 102, 1);
+}
+
+.bor1{
+    border-color: rgba(146, 147, 141, 1);
+}
+
+.imp1{
+    background-color: rgba(60, 65, 70, 1);
+}
+
+.imp-bott{
+    background-color: rgba(43, 47, 50, 1);
+}
+
+.cal-bor{
+    border-color: rgba(232, 224, 211, 1);
+     background-color: rgba(232, 224, 211, 1);;
+}
+
+.bg-sky{
+    background-color: rgba(150, 199, 205, 1);
+}
+ 

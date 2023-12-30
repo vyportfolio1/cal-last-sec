@@ -11,61 +11,82 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/43d8fee5c3.js" crossorigin="anonymous"></script>
 </head>
-<body">
-    <div class="back pt-5 pb-[-10px]">
-        <a class="border-2 border-black py-2 px-3 rounded-md text-orange-500 hover:text-orange-200" href="/code+/05_project-top5/index.html">Back to main meniu</a>
+<body class="bg-sky">
+    <div class="back pt-5 pb-[-10px] scale-50 sm:scale-75 md:scale-100">
+        <a class="border-2 border-black py-2 px-3 rounded-md text-orange-500 hover:text-orange-200 bg-white" href="/code+/05_project-top5/index.html">Back to main meniu</a>
     </div>
 
-    <h1 class="text-center mt-10 text-4xl pb-[70px]">CALCULATOR</h1>
+    <h1 class="text-center mt-10 text-4xl pb-[25px] scale-50 sm:scale-75 md:scale-100">CALCULATOR</h1>
 
-
-
-    
-
-    <div class="cal flex flex-col items-center">
-
-
-        <div class="imp">
-            <input type="text" name="rezultat" id="rezultat" readonly class="p-4 w-60 bg-yellow-200">
-        </div>
+    <div class="flex justify-center scale-50 sm:scale-75 md:scale-100">
+    <div class="cal-bor border-8 border-t-[20px] w-[484px]">
+        <div class="all-cal flex flex-col w-[470px] pt-4">
+            <div class="input-cor p-10 imp1">
+                <div class="imp border-x-[40px] border-y-[10px] bor1 rounded-lg">
+                    <input type="text" name="rezultat" id="rezultat" readonly class="p-4 w-full bg-r ">
+                </div>
+            </div>
             
-  
-                <div class="cal2 flex justify-center">
+            <div class="imp-bott w-[470px] h-8"></div>
+            
+            
+            
+            
+                <div class="cal flex flex-col items-center gap-6 w-[470px] rotx">
+            
+            
+                 
+                    <label class="on-off-button relative inline-flex items-center cursor-pointer mt-3">
+                        <input type="checkbox" value="" class="sr-only peer" checked>
+                        <div class="w-11 h-6 bg-gray-200 rounded-lg peer peer-focus:ring-4 peer-focus:ring-white dark:peer-focus:ring-black dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-xl after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-black"></div>
+                        <span class="isiton ms-3 text-sm font-medium text-gray-900 dark:text-gray-300 uppercase">on-off</span>
+                      </label>
+                        
+              
+                            <div class="cal2 flex justify-center">
+                          
+            
+                                <div class="box flex flex-col rotx border-4">
+                                    <button class="ins1 py-3 px-4 border-8 rounded-lg m-2" onclick="updateCal('-')">-</button>
+                                    <button class="ins1 py-3 px-4 border-8 rounded-lg m-2" onclick="updateCal('+')">+</button>
+                                    <button class="ins1 py-3 px-4 border-8 rounded-lg m-2" onclick="updateCal('/')">/</button>
+                                    <button class="ins1 py-3 px-4 border-8 rounded-lg m-2" onclick="updateCal('*')">*</button>
+                                </div>
+            
+                            <div class="box w-[277px] rotx border-4">
+                                <button class="ins py-3 px-4 border-8 rounded-lg m-2" onclick="updateCal('7')">7</button>
+                                <button class="ins py-3 px-4 border-8 rounded-lg m-2" onclick="updateCal('8')">8</button>
+                                <button class="ins py-3 px-4 border-8 rounded-lg m-2" onclick="updateCal('9')">9</button>
+            
+                                <button class="ins py-3 px-4 border-8 rounded-lg m-2" onclick="updateCal('4')">4</button>
+                                <button class="ins py-3 px-4 border-8 rounded-lg m-2" onclick="updateCal('5')">5</button>
+                                <button class="ins py-3 px-4 border-8 rounded-lg m-2" onclick="updateCal('6')">6</button>
+                                
+                                <button class="ins py-3 px-4 border-8 rounded-lg m-2" onclick="updateCal('1')">1</button>
+                                <button class="ins py-3 px-4 border-8 rounded-lg m-2" onclick="updateCal('2')">2</button>
+                                <button class="ins py-3 px-4 border-8 rounded-lg m-2" onclick="updateCal('3')">3</button>
+            
+                                <button class="ins py-3 px-4 border-8 rounded-lg m-2" onclick="updateCal('0')">0</button>
+                                <button class="ins py-3 px-4 border-8 rounded-lg m-2" onclick="updateCal('.')">.</button>
+                                <button class="ins1 py-3 px-4 border-8 rounded-lg m-2" onclick="calculateResult()">=</button>
+                            </div>
+            
+            
+            
+                            <div class="box rotx border-4 flex flex-col justify-end">
+                                <button class="ins1 py-3 px-4 border-8 rounded-lg m-2" onclick="clearInput()">C</button>
+                            </div>
+                        </div>
+            
+                        <div class="bott w-full h-8"></div>
+            
+            
+                        </div>
+        </div>
+    </div>
+</div>
 
-                    <div class="box flex flex-col">
-                        <button class="-mt-1 p-3" onclick="updateCal('-')">-</button>
-                        <button class="-mt-1 p-3" onclick="updateCal('+')">+</button>
-                        <button class="-mt-1 p-3" onclick="updateCal('/')">/</button>
-                        <button class="-mt-1 p-3" onclick="updateCal('*')">*</button>
-                    </div>
 
-                <div class="box w-[152px] rotx">
-                    <button class="ins gg" onclick="updateCal('7')">7</button>
-                    <button class="ins" onclick="updateCal('8')">8</button>
-                    <button class="ins" onclick="updateCal('9')">9</button>
-
-                    <button class="ins gg" onclick="updateCal('4')">4</button>
-                    <button class="ins" onclick="updateCal('5')">5</button>
-                    <button class="ins" onclick="updateCal('6')">6</button>
-                    
-                    <button class="ins gg" onclick="updateCal('1')">1</button>
-                    <button class="ins" onclick="updateCal('2')">2</button>
-                    <button class="ins" onclick="updateCal('3')">3</button>
-
-                    <button class="ins gg" onclick="updateCal('0')">0</button>
-                    <button class="ins" onclick="updateCal('.')">.</button>
-                    <button class="ins" onclick="calculateResult()">=</button>
-                </div>
-
-
-
-                <div class="box">
-                    <button class="p-3" onclick="clearInput()">C</button>
-                </div>
-            </div>
-
-
-            </div>
         
 
     
